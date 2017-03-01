@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="Anisha1.css">
+<title>Anisha</title>
+</head>
+<body>
+	<h1>Anisha Nagarajan</h1>
+	<h2>Sophomore, University of Southern California</h2>
+	<br>
+	<!-- Explain how to build navbar without Bootstrap, ul li float right -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- Explain target blank = new tab -->
+        </div>
+        <ul id="myNav" class="nav navbar-nav">
+          <!-- DON'T WRITE THE JAVASCRIPT YET. IGNORE ONCLICK-->
+          <li><a href="#" onclick="clearAll()">Home</a></li>
+          <li><a id="contact" href="#" onclick="click1()">Contact</a></li>
+          <li><a href="#" onclick="openPdf()">Resume</a></li>
+      	</ul>
+      </div>
+    </nav>
+    <div id="work">
+    <h3>Work Experience</h3>
+      <ul id="wList">
+        <li>USC Viterbi VAST, Project Manager</li>
+        <li>Symantec Corp, Engineering Configuration Management Intern</li>
+        <li>Oracle Inc, Software Engineering Intern</li>
+      </ul>
+    </div>
+    <div id="involvement">
+    <h3>Involvement</h3>
+      <ul id="iList">
+      <li>USC Scope: Development Club</li>
+      <li>SC Women's Club Soccer</li>
+      <li>USC Society of Women Engineers</li>
+    </ul>
+  </div>
+  <iframe id="myFrame" style="display:none" width="600" height="300"></iframe>
+<!--input type="button" value="Open PDF" onclick = "openPdf()"/-->
+<script type="text/javascript">
+function openPdf()
+{
+   window.parent.location.href='Anisha2.html';
+}
+</script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#contact").click(function(){
+          $("#work").hide();
+      });
+    });
+    var h2 = document.querySelectorAll("h2");
+
+    <!-- display contact info -->
+    function click1(){
+      $(document).ready(function(){
+        $("contact").click(function(){
+          $("work").hide();
+      });
+    });
+    }
+
+    <!-- display resume in pdf -->
+    function click2(){
+    }
+
+    function click3(){
+      for (var i=0; i<h2.length; i++){
+        h2[i].style.textDecoration = "none";
+        h2[i].parentNode.style.border = "none";
+      }
+      var elem = document.getElementById('title-1');
+      elem.style.textDecoration = "underline";
+      elem.parentNode.style.border = "1px solid black";
+    }
+
+</html>

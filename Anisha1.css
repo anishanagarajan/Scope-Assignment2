@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #8E94F2;
+}
+
+h1 {
+	color: white;
+	
+	font-size: 45px;
+	line-height: 1;
+	padding-left: 20px;
+}
+
+h2 {
+	
+	font-size: 25px;
+	line-height: 0.5;
+	color: #7A28CB;
+	padding-left: 20px;
+
+}
+
+h3 {
+	font-size: 25px;
+	color: white;
+	margin-left: 25px;
+}
+
+p {
+	color: #863BCF;
+}
+
+li {
+	color: #7A28CB;
+}
+
+.navbar navbar-default {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#contact-info {
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	position: absolute;
+	left: 33%;
+	right: 40%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 50px;
+}
+
+#email {
+	float: left;
+	margin: 10px;
+	margin-top: 2px;
+}
+
+#phone {
+	float: right;
+	margin:10px;
+	margin-top: 2px;
+}
+
+#work {
+	float: left;
+	margin: 30px;
+	margin-left: 75px;
+}
+
+#involvement {
+	float: right;
+	margin: 30px;
+	margin-right: 250px;
+}
+
+#iList, #wList {
+	line-height: 2;
+	font-color: gray;
+}
+
